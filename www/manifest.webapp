@@ -1,35 +1,35 @@
 {
-  version: "0.1",
-  name: "Writing Apps",
-  description: "Writing (good) Webapps",
-  launch_path: "/writing-webapps",
-  icons: {
+  "version": "0.1",
+  "name": "Writing Apps",
+  "description": "Writing (good) Webapps",
+  "launch_path": "/writing-webapps",
+  "icons": {
     "16": "/img/icons/mortar-16.png",
     "48": "/img/icons/mortar-48.png",
     "128": "/img/icons/mortar-128.png"
   },
-  installs_allowed_from: ["*"],
-  appcache_path: "/cache.manifest",
+  "installs_allowed_from": ["*"],
+  "appcache_path": "/cache.manifest",
 
-  developer: {
+  "developer": {
     "name": "Your Name",
     "url": "http://yourawesomeapp.com"
   },
 
-  locales: {
-    es: {
-      description: "Su nueva aplicación impresionante Open Web",
-      developer: {
+  "locales": {
+    "es": {
+      "description": "Su nueva aplicación impresionante Open Web",
+      "developer": {
         "url": "http://yourawesomeapp.com"
       }
     },
-    it: {
-      description: "Il vostro nuovo fantastico Open Web App",
-      developer: {
+    "it": {
+      "description": "Il vostro nuovo fantastico Open Web App",
+      "developer": {
         "url": "http://yourawesomeapp.com"
       }
     }
   },
 
-  default_locale: "en"
+  "default_locale": "en"
 }
