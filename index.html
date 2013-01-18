@@ -1,1 +1,200 @@
-Setting up pages...
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- Use this installation button to install locally without going
+         through the marketpace (see app.js) -->
+    <!-- <button id="install-btn">Install</button>     -->
+
+    <x-view>
+      <header>
+        <button class="prev hidden">Prev</button>
+        <h1>Making (good) Webapps</h1>
+        <button class="next">Next</button>
+      </header>
+
+      <x-view class="open">
+        <div class="name">
+          <p>James Long, Mozilla Webdev<p>
+          <p>January 17, 2013</p>
+        </div>
+      </x-view>
+
+      <x-view>
+        <button id="install-btn">Install</button>
+      </x-view>
+
+      <x-view>
+        <h1>Performance is critical</h1>
+      </x-view>
+
+      <x-view>
+        <h1>(Perceived) performance is critical</h1>
+      </x-view>
+
+      <x-view>
+        <h1>What is a webapp?</h1>
+
+        <ul>
+          <li>Page refreshes are rare</li>
+          <li>Hardware-level integration</li>
+          <li>Notifications, structured UI, etc</li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>Is HTML5 ready? (hint: yes!)</h1>
+        <ul>
+          <li>
+            <a href="http://www.sencha.com/blog/the-making-of-fastbook-an-html5-love-story/">
+              http://www.sencha.com/blog/the-making-of-fastbook-an-html5-love-story/
+            </a>
+          </li>
+        </ul>
+      </x-view>
+
+      <x-view class="touch">
+        <h1>Touch vs click</h1>
+        <ul>
+          <li>*Immediate* feedback is important!</li>
+        </ul>
+
+        <div class="touch1"></div>
+        <div class="touch2"></div>
+      </x-view>
+
+      <x-view class="touch">
+        <a class="jsfiddle" href="http://jsfiddle.net/xEkZv/1/">jsfiddle</a>
+
+        <h1>Touch vs click</h1>
+
+        <pre><code>
+var clickEvent = ('ontouchstart' in document.documentElement ?
+                  'touchstart' :
+                  'click');
+
+$(node).on(clickEvent, function() { ... });</code></pre>
+      </x-view>
+
+      <x-view>
+        <h1>Avoid refreshing the entire page</h1>
+        <ul>
+          <li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html">History API</a></li>
+          <li>Either ajax load sections or dump most/all of your app on first load</li>
+        </ul>
+      </x-view>
+
+      <x-view class="ajax">
+        <h1>Avoid refreshing the entire page</h1>
+
+        <div class="ajax-content">
+        </div>
+      </x-view>
+
+      <x-view class="animations">
+        <a class="jsfiddle" href="http://jsfiddle.net/Tw25A/3/">jsfiddle</a>
+        <div class="box"></div>
+
+        <h1>Smooth animations</h1>
+        <ul>
+          <li>Use transforms instead of top/left</li>
+          <li>CSS3 transitions and animations (definitely don't use jQuery's `animate`)</li>
+          <li>
+            Working with CSS3 animations from javascript:
+            <a href="https://github.com/jlongster/css-animations.js">css-animations.js</a>
+          </li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>Relative font-sizes</h1>
+        <ul>
+          <li>ems</li>
+          <li>vw/vh</li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>Reduce memory allocations</h1>
+        <ul>
+          <li>Reuse DOM elements</li>
+          <li>Only create DOM nodes that are visible for long lists</li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>Always compress/concatenate resources</h1>
+        <ul>
+          <li>Mobile = less bandwidth</li>
+          <li>If possible, optimize images too</li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>Want Offline? Use AppCache</h1>
+        <ul>
+          <li>It's tricky though</li>
+          <li><a href="http://www.html5rocks.com/en/tutorials/appcache/beginner/">http://www.html5rocks.com/en/tutorials/appcache/beginner/</a></li>
+          <li>mortar generates it, also see <a href="http://appcache.rawkes.com/">http://appcache.rawkes.com/</a></li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/HTML/Using_the_application_cache#Testing_for_updates_to_the_cache_manifest">
+              Testing for updates
+            </a>
+          </li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>manifest.webapp</h1>
+        <ul>
+          <li>
+            <a href="https://marketplace.firefox.com/developers/validator">
+              Validator
+            </a>
+          </li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>mortar</h1>
+        <ul>
+          <li>pre-built templates that has all (or most) of this stuff</li>
+          <li>mortar-layouts</li>
+        </ul>
+      </x-view>
+
+      <x-view>
+        <h1>Firefox OS Simulator</h1>
+        <ul>
+          <li>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/">
+              https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/
+            </a>
+          </li>
+        </ul>
+      </x-view>
+    </x-view>
+
+    <div class="loading">Loading...</div>
+
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+  </body>
+</html>
