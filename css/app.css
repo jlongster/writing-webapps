@@ -227,10 +227,10 @@ x-view ul {
     font-size: 3vw;
 }
 .name {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1.7em;
     text-align: right;
-    margin-top: 5em;
+    margin-top: 4em;
+    font-family: Georgia;
 }
 .name p {
     margin: .5em;
