@@ -2,7 +2,7 @@
   version: "0.1",
   name: "Writing Apps",
   description: "Writing (good) Webapps",
-  launch_path: "/",
+  launch_path: "/writing-webapps",
   icons: {
     "16": "/img/icons/mortar-16.png",
     "48": "/img/icons/mortar-48.png",
