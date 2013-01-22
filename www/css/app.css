@@ -16,6 +16,7 @@ html, body {
 body {
     font-family: 'MozTTLight', Verdana, sans-serif;
     font-size: 2.25vw;
+    font-size: 2em;
 }
 
 h1 {
@@ -153,7 +154,9 @@ a.jsfiddle {
 }
 
 .touch1, .touch2 {
+    width: 5em;
     width: 10vw;
+    height: 5em;
     height: 10vw;
     color: white;
     margin: 1em;

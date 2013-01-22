@@ -96,11 +96,11 @@ define(function(require) {
 
     $('x-view.ajax').get(0).onOpen = function(view) {
         var el = $('.ajax-content', view.el);
-        el.html('<img src="/img/ajax-loader.gif" />');
+        el.html('<img src="img/ajax-loader.gif" />');
 
         // Simulate slow ajax laod
         setTimeout(function() {
-            $.get('/ajax.html', function(r) {
+            $.get('ajax.html', function(r) {
                 el.text(r);
             });
         }, 1500);
